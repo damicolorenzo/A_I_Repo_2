@@ -1,0 +1,12 @@
+L'esercizio è stato risolto nel seguente modo:
+
+livello 1:
+- classe che permette di implementare algoritmi di ricerca richiesti dall'esercizio per la creazione del grafo
+- la funzione BestFSVisit crea il grafo sfuttando una coda di priorità che si ordina in base al costo di ogni nodo vicino a quello in cui ci si trova e poi continua la visita dei nodi prendendoli dalla coda
+- il costo viene calcolato tramite la funzione manDistance che effettua il calcolo basandosi sulla distanza di Manhattan tra un nodo vicino a quello visitato e l'obiettivo
+
+livello 2:
+- classe che permette di visualizzare il problema
+- la funzione plot_draw disegna la matrice data in ingresso dal problema 
+- la funzione plot_run procede tramite la funzione graphToProblem all'analisi del grafo creato nel livello 1 per poter creare un oggetto problem della classe Search_problem_from_explicit_graph che verra passato all' AStarSearch per essere analizzato al fine di trovare il cammino soluzione del problema
+- la funzione plot_draw_solution infine procede alla lettura del cammino e alla rappresentazione grafica del cammino sulla matrice
